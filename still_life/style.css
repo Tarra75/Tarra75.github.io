@@ -1,0 +1,266 @@
+body{
+    background: rgb(255, 152, 115);
+    overflow: hidden;
+}
+.frame {
+    width: 1200px;
+    height: 700px;
+    background: white;
+    float: center;
+    margin-left: 80px;
+}
+.table{
+    position: absolute;
+    background: rgb(255, 249, 203);
+    width: 880px;
+    height: 90px;
+    margin-top: 450px;
+    margin-left: 240px;
+}
+
+.stand{
+    position: absolute;
+    background: lightslategray;
+    width: 660px;
+    height: 30px;
+    margin-top: 580px;
+    margin-left: 340px;
+}
+
+.tableleg{
+    position: absolute;
+    background: lightslategray;
+    width: 20px;
+    height: 160px;
+    margin-top: 540px;
+    margin-left: 340px;
+}
+
+.tableleg2{
+    position: absolute;
+    background: lightslategray;
+    width: 20px;
+    height: 160px;
+    margin-top: 540px;
+    margin-left: 990px;
+}
+
+.book1{
+    position: absolute;
+    background: paleturquoise;
+    width: 180px;
+    height: 25px;
+    margin-top: 428px;
+    margin-left: 440px;
+    z-index: .5;
+}
+
+.book2{
+    position: absolute;
+    background: lightpink;
+    width: 140px;
+    height: 30px;
+    margin-top: 398px;
+    margin-left: 458px;
+    z-index: .5;
+}
+
+.book3{
+    position: absolute;
+    background: lightsalmon;
+    width: 120px;
+    height: 24px;
+    margin-top: 375px;
+    margin-left: 464px;
+    z-index: .5;
+}
+
+.pineapple {
+    position: absolute;
+    margin-top: 229px;
+    margin-left: 476px;
+    width: 100px;
+      height: 150px;
+      background: yellow;
+      border-radius: 50%;
+      z-index: 1;
+}
+
+.leaf1 {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 540px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 50px solid rgb(45, 103, 45);
+    z-index: .5;
+    transform: rotate(50deg);
+  }
+  .leaf2 {
+    position: absolute;
+    margin-top: 190px;
+    margin-left: 505px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 45px solid rgb(45, 103, 45);
+    z-index: .5;
+  }
+
+  .leaf3 {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 474px;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 50px solid rgb(45, 103, 45);
+    transform: rotate(-50deg);
+    z-index: .5;
+  }
+
+.pear1 {
+    position: absolute;
+    margin-top: 420px;
+    margin-left: 580px;
+    width: 30px;
+      height: 60px;
+      background: rgb(125, 76, 76);
+      border-radius: 50%;
+      z-index: 1;   
+}
+
+.pear2 {
+    position: absolute;
+    margin-top: 420px;
+    margin-left: 540px;
+    width: 40px;
+      height: 60px;
+      background: rgb(125, 76, 76);
+      border-radius: 50%;
+      z-index: 1;   
+      transform: rotate(60deg);
+}
+
+.lime1 {
+    position: absolute;
+    margin-top: 443px;
+    margin-left: 480px;
+    width: 30px;
+      height: 30px;
+      background: rgb(98, 255, 98);
+      border-radius: 50%;
+      z-index: 1;   
+}
+
+.lime2 {
+    position: absolute;
+    margin-top: 443px;
+    margin-left: 440px;
+    width: 36px;
+      height: 36px;
+      background: rgb(98, 255, 98);
+      border-radius: 50%;
+      z-index: 1;   
+}
+
+.lime3 {
+    position: absolute;
+    margin-top: 420px;
+    margin-left: 460px;
+    width: 32px;
+      height: 32px;
+      background: rgb(98, 255, 98);
+      border-radius: 50%;
+      z-index: 1;   
+}
+
+
+.vase{
+    position: absolute;
+    background: lightblue;
+    width: 70px;
+    height: 190px;
+    margin-top: 285px;
+    margin-left: 640px;
+    opacity: .3;
+    z-index: 1;
+}
+
+.stem1{
+    position: absolute;
+    background: rgb(56, 145, 56);
+    width: 20px;
+    height: 210px;
+    margin-top: 264px;
+    margin-left: 650px;
+    z-index: .5;
+}
+
+.stem2{
+    position: absolute;
+    background: rgb(56, 145, 56);
+    width: 15px;
+    height: 210px;
+    margin-top: 264px;
+    margin-left: 680px;
+    z-index: .5;
+}
+
+.burst-12 {
+    background: wheat;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    text-align: center;
+    margin-top: 180px;
+    margin-left: 645px;
+    z-index: 1;
+  }
+  .burst-12:before,
+  .burst-12:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 80px;
+    background: wheat;
+  }
+  .burst-12:before {
+    transform: rotate(30deg);
+  }
+  .burst-12:after {
+    transform: rotate(60deg);
+  }
+
+  .burst-13 {
+    background: rgb(233, 202, 144);
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    text-align: center;
+    margin-top: 180px;
+    margin-left: 635px;
+    z-index: .5;
+  }
+  .burst-13:before,
+  .burst-13:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 80px;
+    background: rgb(233, 202, 144);
+  }
+  .burst-13:before {
+    transform: rotate(30deg);
+  }
+  .burst-13:after {
+    transform: rotate(60deg);
+  }
