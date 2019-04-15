@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+
+            var ns = "http://www.w3.org/2000/svg";
+    
+            window.onload = function(ev) {
+    
+                var width = 450;
+                var height = 450;
+    
+                var svg = document.getElementById("mysvg");
+    
+                svg.setAttribute("width", width);
+                svg.setAttribute("height", height);
+    
+                var pickOne = Math.min(width, height) * Math.random();
+                console.log(pickOne);
+    
+                for (var i = 10; i < Math.min(width, height); i += 10) {
+    
+                    var rect = document.createElementNS(ns, "rect");
+    
+                    rect.setAttribute("x", -i / 3);
+                    rect.setAttribute("y", -i / 2);
+                    rect.setAttribute("width", i * 2);
+                    rect.setAttribute("height", i/1);
+                    rect.style.stroke = "salmon";
+                    rect.style.fill = "none";
+    
+                    if (i > pickOne && i < pickOne + 10) {
+                        var angle = 30 * Math.random() - 15;
+                        rect.style.transform = "matrix(1, 0, 0, 1, " + width / 2 + ", " + height / 2 + ") rotate(" + angle + "deg)";
+                    } else {
+                        rect.style.transform = "matrix(1, 0, 0, 1, " + width / 2 + ", " + height / 2 + ")";
+                    }
+    
+                    svg.appendChild(rect);
+    
+                }
+    
+            }
+    
+        </script>
+</head>
+<body>
+  <svg id= "mysvg" width="600" height= "600"   ></svg>
+  <rect x="10" y="5" width="10" height="10" style="stroke:palevioletred(0, 0, 0); 
+  fill: none; transform: matrix(1, 0, 0, 1, 300, 300);"></rect>
+  <rect x="-20" y="-10" width="10" height="20" style="stroke:palevioletred; 
+  fill: none; transform: matrix(1, 0, 0, 1, 300, 300);"></rect> 
+</body>
+</html>
